@@ -79,12 +79,14 @@ st.set_page_config(page_title="Demo for streamlit-calendar", page_icon="📆")
 #     "[![](https://img.shields.io/github/stars/im-perativa/streamlit-calendar?style=social)](https://github.com/im-perativa/streamlit-calendar)"
 # )
 
-mode = st.selectbox(
-    "Calendar Mode:",
-    (
-        "daygrid"
-    ),
-)
+# mode = st.selectbox(
+#     "Calendar Mode:",
+#     (
+#         "daygrid"
+#     ),
+# )
+
+mode="daygrid"
 
 events = [
     {
@@ -315,7 +317,7 @@ if state.get("eventsSet") is not None:
 
 st.write(state)
 
-st.markdown("## API reference")
+# st.markdown("## API reference")
 st.help(calendar)
 
 
